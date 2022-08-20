@@ -1,0 +1,151 @@
+body {
+  background-color: rgb(1, 0, 36);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+ 
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    li {
+      margin: 5px;
+      padding: 15px;
+color: aqua;
+      a {
+        text-decoration: none;
+        border-radius: 50%;
+        padding: 10px;
+        &:hover {
+          background-color: rgb(148, 0, 0);
+        color: white;
+        }
+      }
+    }
+  }
+  h1 { font-family: 'Courgette', cursive;
+    display: flex;
+    a {
+      text-decoration: none;}
+    
+  }
+}
+.mainIndex {
+  font-family: 'Anek Latin', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b" "c d"
+    "e e";
+  margin-left: 10%;
+  margin-right: 10%;
+  column-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  div {
+    margin: 5%;
+    width: 70%;
+    height: 30%;
+    text-align: center;
+    h3 {
+      width: auto;
+    }
+  }
+  .btc2 { width: 150px;
+    height: 150px;
+    animation-name: bitcoin2;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;}
+  .btc {
+    width: 150px;
+    height: 150px;
+    animation-name: bitcoin;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .index1 {
+    grid-area: a;
+    justify-self: center;
+  }
+  .index2 {
+    grid-area: b;
+    justify-self: center;
+  }
+  .index3 {
+    grid-area: c;
+    justify-self: center;
+  }
+  .index4 {
+    grid-area: d;
+    justify-self: center;
+  }
+  .index5 {
+    grid-area: e;
+    text-align: center;
+    justify-self: center;
+  }
+}
+@keyframes bitcoin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bitcoin2 {
+  0% {opacity: 0
+    ;
+  }
+  25% {opacity: 0.5;}
+  50% {
+    opacity: 1;
+  }
+  75% { opacity: 0.5;}
+  100% {opacity: 0;}
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2%;
+  h5{font-family: 'Courgette', cursive;
+  }
+  p{font-family: 'Anek Latin', sans-serif; }
+}
+
+.mainComprar{
+  margin: 3% 10%;
+  display: center;
+  section{
+    text-align: center;
+    border-radius: 20%;
+ width: 70vw;
+ height: 80vh;
+ background-image: url("../img/universo2.jpg");
+ background-size: cover;
+  display: flex;
+flex-direction: column;
+align-content: space-around;
+div{
+  margin: 3%;
+  width: 94%;
+  height: 20%;
+  color: white;
+}}}
+
+  
